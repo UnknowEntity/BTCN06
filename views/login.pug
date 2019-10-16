@@ -1,0 +1,12 @@
+html(lang='en')
+head
+meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+title Login
+body
+form(action="/auth/login", method="post")
+    label(for="email") Email
+    input(name="email", type="text")
+    label(for="password") password
+    input(name="password", type="password")
+    input(type="submit", value="Log In")
+a(href="/user/register") Register
