@@ -6,6 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "clean-css": ">=4.1.11",
+    "constantinople": ">=3.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
@@ -17,6 +19,7 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "uglify-js": "^3.6.2"
   }
 }
