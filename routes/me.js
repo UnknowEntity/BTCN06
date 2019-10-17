@@ -4,7 +4,7 @@ var usermodel = require('../models/user.model');
 var passport = require('../middlewares/passport');
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.json({ user: res.user });
 });
 
 module.exports = router;

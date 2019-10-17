@@ -36,13 +36,13 @@ passport.use(
   new JWTStrategy(
     {
       jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
+      //jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken('jwt'),
       secretOrKey: 'your_jwt_secret'
     },
     function(jwtPayload, cb) {
       //find the user in db if needed
       return UserModel.findOneById(jwtPayload.id)
         .then(user => {
-          console.log(err);
           return cb(null, user);
         })
         .catch(err => {

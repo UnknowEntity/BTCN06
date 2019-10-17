@@ -1,19 +1,19 @@
 var mysql = require('mysql');
 var createConnection = () => {
-  return mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    user: 'id11245753_1612286',
-    password: 'sossos1!',
-    database: 'id11245753_btcn06'
-  });
   // return mysql.createConnection({
   //   host: 'localhost',
   //   port: 3306,
-  //   user: 'root',
-  //   password: 'root',
-  //   database: 'temp'
+  //   user: 'id11245753_1612286',
+  //   password: 'sossos1!',
+  //   database: 'id11245753_btcn06'
   // });
+  return mysql.createConnection({
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: 'root',
+    database: 'temp'
+  });
 };
 
 module.exports = {

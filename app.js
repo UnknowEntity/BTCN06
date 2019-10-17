@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(passport.initialize());
 app.use('/', index);
 app.get('/me', passport.authenticate('jwt', { session: false }), (req, res) => {
-  return res.status(200).send('YAY! this is a protected Route');
+  return res.status(200).json({ user: req.user });
 });
 app.use('/user', user);
 app.use('/auth', auth);
